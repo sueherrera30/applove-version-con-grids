@@ -10,10 +10,16 @@
   text-transform: uppercase;
 }
 
+.container{
+width: 100%;
+margin: 0 auto;
+}
+
 /*para flotar cols:*/
 
 [class *= "col-"]{
-  padding: 20px;
+  padding: 12px;
+  min-height: 7px;
   float: left;
 }
 

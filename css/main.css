@@ -16,7 +16,7 @@
 }
 
 body {
-  /* Establece la fuente de Google aquí */
+  font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
@@ -30,8 +30,137 @@ img {
 a {
   color: #373B47;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
   color: #E95853;
+}
+
+/*SECCION NAV:*/
+
+.alignCenter{
+  text-align: center;
+}
+
+header{
+  position: fixed;
+}
+
+nav{
+  background-color: white;
+}
+
+nav > a{
+  font-weight: 700;
+}
+
+/*SECCION NEGRITA*/
+
+#inicio{
+  clear: both;
+  background-image: url(../assets/images/bg-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#inicio > div > div > input{
+  background-color: #2ECC71;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 20%;
+  margin-bottom: 115px;
+}
+
+#inicio > div:first-child{
+  padding: 50px;
+  font-size: 20px;
+}
+
+#inicio > div:nth-child(2) {
+  font-size: 40px;
+  margin: none;
+}
+
+#inicio > div > div > input:hover{
+  color: #E95853;
+}
+
+/*seccion SERVICE*/
+
+.service{
+  background-color: #E95853;
+  color:white;
+}
+
+.imagenesService{
+  height: 200px;
+  width: 200px;
+}
+
+.textitos{
+  margin-top: 15px;
+  padding: 20px;
+  list-style: none;
+  font-size:12px;
+}
+li{
+  padding: 15px;
+}
+
+/*seccion de catalogo*/
+.tamProyecto{
+  font-size:13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+.rellenoFila{
+  padding: 30px;
+}
+
+#fondoModal{
+  display: none;
+  padding: 70px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background:rgba(15, 227, 154, .7);
+  z-index: 1;
+}
+
+.imgModal{
+  margin: auto;
+  width: 50%;
+  border: 10px solid white;
+  border-radius: 5px;
+}
+
+.img:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.cerrar{
+  position: absolute;
+  top: 65px;
+  right: 375px;
+  color: #33C493;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 2;
+  cursor: pointer;
+}
+#catalogo{
+  margin-top: 8%;
+}
+
+/*seccion del piecito*/
+#piecito {
+  background-color:#E95853;
+  color:white;
 }
